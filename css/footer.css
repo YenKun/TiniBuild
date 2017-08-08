@@ -1,0 +1,39 @@
+.footer ul{
+  float:left;
+  margin-left: 30px;
+  list-style-type:none;
+}
+.footer a{
+  color:#7a7a7a;
+  font-family: "Whitney SSm A","Whitney SSm B","Helvetica Neue","Helvetica",Arial,sans-serif;
+  font-size: 0.72222rem;
+  font-weight: 400;
+}
+.footer a:hover{
+  color:#f6921e;
+  text-decoration: none;
+}
+.footer li{
+  margin-top:15px;
+}
+.footer-icon{
+  width:20%;
+  margin-left:80px;
+  margin-right: 0px;
+  height:auto;
+  float: left;
+}
+.footer{
+  background-color: #fafafa;
+  padding: 80px 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0;
+  text-align: left;
+  color:#444;
+}

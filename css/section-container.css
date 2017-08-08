@@ -1,0 +1,151 @@
+.section-container{
+  margin-left: auto;
+  margin-right: auto;
+  width:95%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.slogan{
+  font-size: 2rem;
+  color: #014E72;
+  font-weight: 500;
+  font-family: "Gotham SSm A","Gotham SSm B","lucida grande",Tahoma,Arial,sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.section2-fleft{
+  float: left;
+  width:50%;
+}
+.section2-fright{
+  float: right;
+  width:50%;
+}
+.section2-inner{
+  max-width: 360px;
+  margin: 0 auto 3.5rem;
+  text-align: center;
+}
+
+.section2-title{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Gotham SSm A","Gotham SSm B","lucida grande",Tahoma,Arial,sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #444;
+  line-height: 1.5;
+}
+.img-responsive{
+  width: 360px;
+    height: auto;
+    margin: 1em auto 1.5em;
+}
+.btn-lm{
+  font-weight: 600;
+  font-family: "Gotham SSm A","Gotham SSm B","lucida grande",Tahoma,Arial,sans-serif;
+  color:#0097db;
+}
+.btn-lm:hover{
+  color:#f6921e;
+  text-decoration: none;
+}
+.section-template{
+  margin-top: -5em;
+  background-image:url(../image/templates-home.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height:560px;
+  width:100%;
+  background-position: 49.6% center;
+  background-size: 200%;
+  position: relative;
+}
+.btn-blue{
+  position: relative;
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn-blue::before{
+  content:"";
+  height:90px;
+  display: block;
+  clear: both;
+
+}
+.btn-blue-inner{
+  padding:10px;
+  font-size: 1rem;
+  border: 3px solid #1b95d2;
+  color:#1b95d2;
+  text-transform: capitalize;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.btn-blue-inner:hover{
+  color:#f6921e;
+  border-color:#f6921e;
+  text-decoration: none;
+}
+
+.section-trial{
+  background-color: #0098db;
+  height: 150px;
+  background-image: url(https://unbounce-wpengine.netdna-ssl.com/photos/pattern_bg.jpg);
+  background-repeat: repeat;
+  text-align: center;
+  color:#FFF;
+}
+.trial-row-container{
+  max-width: 560px;
+  width:98%;
+  height:100px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.row-container-fleft{
+  float:left;
+  font-weight: 400;
+  margin-bottom: 0;
+  font-family: "Gotham SSm A","Gotham SSm B","lucida grande",Tahoma,Arial,sans-serif;
+  margin-top: 40px;
+  font-size: 20pt;
+  line-height: 2;
+  font-weight: 400;
+}
+.btn-orange-inner{
+  color: #FFF;
+  float:left;
+  margin-bottom: 0;
+  margin-top: 16px;
+  padding: 18px;
+  margin-top:40px;
+  background-color:#f6921e;
+  border-radius: 10px;
+  margin-left: 30px;
+  font-size: 18pt;
+  font-family: "Gotham SSm A","Gotham SSm B","lucida grande",Tahoma,Arial,sans-serif;
+  font-weight: 400;
+}
+
+.btn-orange :hover{
+  color: #f6921e;
+  background-color: #fff;
+  border-color: #fff;
+  text-decoration: none;
+}
+.trial-content{
+  font-family: "Gotham SSm A","Gotham SSm B","lucida grande",Tahoma,Arial,sans-serif;
+  font-size: 12pt;
+  height:100px;
+  margin-top: 15px;
+}
+.footer{
+  background-color: #fafafa;
+}

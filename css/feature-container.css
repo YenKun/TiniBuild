@@ -1,0 +1,84 @@
+.feature-banner{
+  background-image: url("../image/feature-banner-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 400px;
+  width: 100%;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.banner-slogan{
+  width:100%;
+  margin:0px auto;
+  color: #FFF;
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Gotham SSm A","Gotham SSm B","lucida grande",Tahoma,Arial,sans-serif;
+}
+.section-top{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+}
+.feature-fleft{
+  float: left;
+  width:24%;
+  color: #FFF;
+  font-family: "Gotham SSm A","Gotham SSm B","lucida grande",Tahoma,Arial,sans-serif;
+}
+.feature-fleft h1{
+  font-size: 28px;
+}
+.fullwidth{
+  width:100%;
+  background-color: #ddecf2;
+  text-align: center;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  overflow: hidden;
+}
+.corner-bt{
+  float: left;
+  border-top: 76px solid #88B941;
+  border-right: 37px solid transparent;
+  height:0;
+  width: 150px;
+}
+.pro-msg{
+  margin-top: -49px;
+  color: #FFF;
+  font-size:20px;
+  font-weight:700;
+  font-family: "Gotham SSm A","Gotham SSm B","lucida grande",Tahoma,Arial,sans-serif;
+}
+.promo-content{
+  color:#004E71;
+  width:calc(100%-285px);
+  float: left;
+  text-align: left;
+  margin:28px 5px 28px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.btn-fright{
+  float:right;
+  margin-top: 28px;
+  margin-right: 100px;
+  text-transform: uppercase;
+}
+.btn-show{
+  border:3px solid #0098DB;
+  color: #0098DB;
+  padding: 10px;
+  font-weight: 600;
+}
+.btn-show:hover{
+  text-decoration:none;
+  border-color:#f6921e;
+  color: #f6921e;
+}

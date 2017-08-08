@@ -1,0 +1,55 @@
+.top-index{
+  background-color: rgba(209,209,209,0.3);
+  width:100%;
+  margin: 0px auto;
+  height:400px;
+}
+.index-content{
+  padding-top: 100px;
+}
+.index-content h1{
+  width:70%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 40px;
+  font-weight: 600;
+  color: #094F71;
+}
+.index-content p{
+  width:70%;
+  margin: 20px auto;
+  text-align: left;
+}
+.index-btn-inner{
+  width:160px;
+  margin: 20px auto;
+}
+.index-btn{
+  text-align: center;
+  color:#094F71;
+  border: 4px solid #094F71;
+  padding: 10px;
+  font-weight: 600;
+}
+.index-btn:hover{
+  text-decoration: none;
+  background-color: #094F71;
+  color: #fff;
+  cursor: pointer;
+}
+.index-img{
+  width:50%;
+  padding-top: 50px;
+  margin: 10px auto;
+}
+.slogan h1{
+  width:80%;
+  margin: 40px auto 20px;
+  color: #094F71;
+  font-weight: 600;
+  height: 80px;
+}
+.inner-brand{
+  margin: 20px auto;
+  height:300px;
+}

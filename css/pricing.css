@@ -1,0 +1,124 @@
+.bg-top{
+  background-color: #0098db;
+  height:400px;
+  width:100%;
+}
+.slogan {
+  padding-top: 40px;
+  color:#FFF;
+  margin: 0 auto;
+  width: 60%;
+  font-family: "Gotham SSm A","Gotham SSm B","lucida grande",Tahoma,Arial,sans-serif;
+  line-height: 2.4;
+}
+.slogan h2{
+  font-weight: 700;
+  font-size: 32px;
+}
+.slogan p{
+  margin: 0 auto;
+  width:50%;
+  font-weight: 500;
+  font-size: 20px;
+}
+.price_col{
+  position: absolute;
+  z-index: 1;
+  top:240px;
+  margin: 0 10%;
+  background-color: transparent;
+  width:80%;
+}
+.col-md-4{
+  padding: 0px!important;
+}
+.column_price{
+  margin: 8px 0 0;
+  padding: 20px;
+  background-color: #FFF;
+
+  box-shadow: 0 0 20px -5px #34484D;
+  font-family: "Whitney SSm A","Whitney SSm B","Helvetica Neue","Helvetica",Arial,sans-serif;
+}
+.column_price_strong{
+  padding: 20px;
+  border: 8px solid #076694;
+
+  background-color: #FFF;
+  box-shadow: 10px 0 10px -8px rgba(68,68,68,0.5), -10px 0 10px -8px rgba(68,68,68,0.5);
+  font-family: "Whitney SSm A","Whitney SSm B","Helvetica Neue","Helvetica",Arial,sans-serif;
+}
+.left_col  .price_title ,.left_col .price_tag{
+  color:#87BB36;
+}
+.mid_col  .price_title ,.mid_col .price_tag{
+  color:#14ACB4;
+}
+.right_col  .price_title ,.right_col .price_tag{
+  color:#076694;
+}
+
+.price_title{
+  font-size: 32px;
+  font-weight: 800;
+  width:50%;
+  text-align: center;
+  margin: 0 auto;
+}
+.price_content, .price_tag_description {
+  font-size:14px;
+  font-weight: 400;
+  width:90%;
+  text-align: center;
+  margin: 20px auto;
+  color:#444;
+}
+.price_tag{
+  font-size:40px;
+  font-weight: 700;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+.price_btn_left{
+  color:#FFF;
+  background-color: #87BB36;
+  padding: 25px 10px;
+  text-align: center;
+  border: solid 3px #72a12f;
+}
+.price_btn_mid{
+  color:#FFF;
+  background-color: #14ACB4;
+  padding: 25px 10px;
+  text-align: center;
+  border: solid 3px #1a9197;
+}
+.price_btn_right{
+  color:#FFF;
+  background-color: #076694;
+  padding: 25px 10px;
+  text-align: center;
+  border: solid 3px #03567f;
+}
+
+.price_btn_left:hover{
+  color:#076694;
+  background-color: #FFF;
+  text-decoration: none;
+}
+.price_btn_mid:hover{
+  color:#076694;
+  background-color: #FFF;
+  text-decoration: none;
+}
+.price_btn_right:hover{
+  color:#076694;
+  background-color: #FFF;
+  text-decoration: none;
+}
+.price_btn_container{
+  width:200px;
+  margin: 60px auto;
+  font-weight: 600;
+}
