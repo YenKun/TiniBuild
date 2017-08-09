@@ -5,22 +5,25 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/feature-container.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css'>
     <title>Mobile Responsive Landing Page Builder &amp; Website Overlay Creator</title>
     <script src="../js/jquery-3.2.1.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
     <div class="navbar-header">
       <div class="fixed-logo"><a href="../index.html"><img src="../image/fixed-logo.png"></a></div>
       <div class="menu-item">
         <ul>
-          <li><a href="features.html"class="menu-features">FEATURES</a></li>
-          <li><a href="template.html"class="menu-templates">TEMPLATES</a></li>
-          <li><a href="case.html"class="menu-customers">CASES</a></li>
-          <li><a href="pricing.html"class="menu-pricing">PRICING</a></li>
-          <li><a href="blog.html"class="menu-blog">BLOG</a></li>
+          <li><a href="features.html" class="menu-features">FEATURES</a></li>
+          <li><a href="template.html" class="menu-templates">TEMPLATES</a></li>
+          <li><a href="case.html" class="menu-customers">CASES</a></li>
+          <li><a href="pricing.html" class="menu-pricing">PRICING</a></li>
+          <li><a href="blog.html" class="menu-blog">BLOG</a></li>
         </ul>
       </div>
     </div>
@@ -57,73 +60,441 @@
         <a class="btn-show" href="#">SHOW ME</a>
       </div>
     </div>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
   <style>
   body {
       position: relative;
   }
-  ul.nav-pills {
+/*  ul.nav-pills {
       top: 20%;
       position: fixed;
   }
   div.col-sm-9 div {
       height: 250px;
       font-size: 28px;
+  }*/
+
+/*
+A Bootstrap 3.1 affix sidebar template
+from http://bootply.com
+
+This CSS code should follow the 'bootstrap.css'
+in your HTML file.
+
+license: MIT
+author: bootply.com
+*/
+
+#ass {
+  position: relative;
+  height:auto;
+  overflow-y: scroll;
+}
+
+/*.navbar-bright {
+ background-color:#111155;
+ color:#fff;
+}*/
+
+.affix-top,.affix{
+ position: static;
+}
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+    margin-top:30px;
+    width:228px;
   }
+  
+  #sidebar.affix {
+    position: fixed;
+    top:70px;
+    width:228px;
+  }
+}
 
-  </style>
-</head>
-<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+/*#sidebar li.active {
+  border:0 #eee solid;
+  border-right-width:25px;
+}*/
 
+.col-md-9{
+  padding-top: 2%;
+  width:auto;
+  margin:2%;
+}
+
+a{
+  color:#444;
+  font-family: Century Gothic;
+  font-size:13px;
+}
+
+a:hover {
+    color:#f6921e !important;
+    background-color: transparent !important;
+}
+
+a:active{
+      color:#f6921e !important;
+    background-color: transparent !important;
+}
+
+li{
+  background-color: transparent !important;
+  width:auto;
+  float:left;
+}
+
+li.active a{
+    color:#f6921e !important;
+    background-color: transparent !important;
+}
+
+li.active div{
+    background-color: #f6921e !important; 
+   
+}
+
+#circ:hover{
+    background-color: #f6921e !important; 
+
+}
+/*
+svg{
+  float:left;
+  margin:3%;
+  padding-top: 1%
+}
+*/
+#circ{
+    
+    float:left;
+    margin:6% 4.5% 4.5% 4.5%;
+    border: 1px solid grey;
+    padding-top: 3%; 
+    background: transparent;
+    width: 13px;
+    height:13px;
+    border-radius: 50px;
+
+
+}
+#lihead{
+  color:#444;
+  font-weight: 500;
+  background: #ddecf2 !important;
+  line-height: 150%;
+  padding:3%;
+  width:80%;
+  margin-bottom: 5%
+}
+
+#sub{
+  margin-left: 15%
+}
+
+h2{
+  color:#014E72;
+  font-weight:normal;
+}
+#cont{
+  line-height: 150%;
+  font-size: 14px;
+  font-family: Century Gothic;
+  color:#666;
+  font-weight: lighter
+ 
+}
+#sel_cont{
+  line-height: 170%;
+  font-size: 13px;
+  font-family: Century Gothic;
+  color:#666;
+  font-weight: lighter
+ 
+}
+.cate-title{
+  border-top:3px solid #0098db;
+  width:40px;
+
+}
+#cate-wrap{
+  margin: 5%;
+  padding-bottom: 5%
+}
+
+.fRight{
+  float:right;
+  right:2%;
+  margin-top: 5%
+}
+
+.fLeft{
+  float:left;
+  width:250px;
+
+}
+.row{
+  width:1100px;
+}
+
+#leftCol{
+  padding:2%;
+  margin:0;
+}
+
+h3{
+  font-weight:550;
+  font-size:16px;
+  font-family: Century Gothic;
+  color: #444;
+}
+.fLeft_img{
+  float:left;
+  margin-top: 8%;
+}
+
+.fLeft_cont{
+  float:left;
+  margin-left:12px;
+  width:250px;
+}
+
+#select_icons{
+  width:100%;
+  height:auto;
+  margin:2% 0 15% 0;
+}
+
+#wrap_left{
+  margin:1%;
+  float:left;
+  padding:2%;
+}
+
+img{
+  margin-top: 2%;
+  margin-bottom:5%;
+}
+
+
+
+ </style>
+<!--           <svg class="circ" width="20" height="20">
+                <circle cx="10" cy="10" r="7" stroke="darkblue" stroke-width="0.3" fill="transparent" />
+                      Sorry, your browser does not support inline SVG.
+                </svg> -->
+
+
+<!--main-->
 <div class="container">
   <div class="row">
-    <nav class="col-sm-3" id="myScrollspy">
-      <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#section1">Section 1</a></li>
-        <li><a href="#section2">Section 2</a></li>
-        <li><a href="#section3">Section 3</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#section41">Section 4-1</a></li>
-            <li><a href="#section42">Section 4-2</a></li>                     
-          </ul>
-        </li>
-      </ul>
-    </nav>
+      <!--left-->
+      <div class="col-md-3" id="leftCol">
+        <ul class="nav nav-stacked" id="sidebar">
+          <li id="lihead">UNBOUNCE PLATFORM</li>
+          <li><div id="circ"></div><a href="#sec0">UNBOUNCE BUILDER</a></li>
+          <li id="sub"><div id="circ"></div><a href="#sec1">LANDING PAGES</a></li>
+          <li id="sub"><div id="circ"></div><a href="#sec2">CONVERTABLES</a></li>
+          <li><div id="circ"></div><a href="#sec3">CONVERSION TOOLS</a></li>
+          <li><div id="circ"></div><a href="#sec4">AGENCY & CLIENT TOOLS</a></li>
+        </ul>
+      </div><!--/left-->
+      
+      <!--right-->
+<div id="ass" data-spy="scroll" data-target="sidebar">
+      <div class="col-md-9">
+      <div id="cate-wrap">
+        <h2 id="sec0">Unbounce Builder</h2>
+        <p id="cont">The Unbounce Builder empowers every member of your team to rapidly build custom landing pages and high-converting overlays (Convertables) for any campaign — without developers, coding skills or tech bottlenecks.</p>
+      </div>
 
-    <div class="col-sm-9" id="home">
-      <div id="section1" id="homehome">    
-        <h1>Section 1</h1>
-        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      <div id="cate-wrap">  
+      <div class="fLeft">
+        <h2 class="cate-title">Landing Pages</h2>
+        <p id="cont">Unbounce is the world’s most sophisticated landing page builder. What&#8217;s to love about it? Well, marketers love the drag and drop builder and airtight integrations. Designers love the ability to match any creative vision or brand guideline. And developers love how nobody asks them to do anything.<br />
+<a href="/pricing/" class="btn orange-btn orange-shadow-btn orange-btn-banner" target="_self" style="padding: 7px 15px; font-size: 13px; display: inline-block; margin-top: 13px; -webkit-box-shadow: 0 2px #db821a; box-shadow: 0 2px #db821a; margin-bottom: 3px; border-radius: 2px;">Try Unbounce Free</a></p>
       </div>
-      <div id="section2" id="homehome"> 
-        <h1>Section 2</h1>
-        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-      </div>        
-      <div id="section3" id="homehome">         
-        <h1>Section 3</h1>
-        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      <div class="fRight"><img src="/Users/apple/Desktop/TiniBuild_wwy/Landing-Page-Builder-1.jpeg" alt="Landing Pages" width="420" height="301" data-src="/Landing-Page-Builder-1.jpeg" /></div>
       </div>
-      <div id="section41" id="homehome">         
-        <h1>Section 4-1</h1>
-        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-      </div>      
-      <div id="section42" id="homehome">         
-        <h1>Section 4-2</h1>
-        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+
+
+              <div id="select_icons">
+
+                  <div id="wrap_left">
+                  <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-01.svg" alt="flogo" width="60" height="60" />
+                  <div class="fLeft_cont">
+                    <h3>Drag & Drop Any Element</h3>
+                    <p id="sel_cont">
+                      Add, remove or customize your page elements with just a few clicks. Anyone can use it… no coding skills required!                                              
+                      <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div></p>
+                  </div>
+                  </div>
+
+                  <div id="wrap_left">
+                  <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-13.svg" alt="flogo" width="60" height="60" />
+                  <div class="fLeft_cont">
+                    <h3>Match Your Branding</h3>
+                    <p id="sel_cont">
+                      Make any template your own. Every element can be completely customized, helping you stay on-brand while still designing for conversion.                                             
+                      <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div></p>
+                  </div>
+                  </div>
+
+                  <div id="wrap_left">
+                   <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-05.svg" alt="flogo" width="60" height="60" />
+                  <div class="fLeft_cont">
+                    <h3>Works With WordPress</h3>
+                    <p id="sel_cont">
+                      Publish landing pages to any WordPress site with 1 click; no DNS record or CNAME setup required. Just install the plugin and start publishing.                                              
+                      <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div></p>
+                  </div>
+                  </div>
+
+                   <div id="wrap_left">
+                   <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-22.svg" alt="flogo" width="60" height="60" />
+                  <div class="fLeft_cont">
+                    <h3>Dynamic Text Replacement</h3>
+                    <p id="sel_cont">
+                      DTR swaps out select keywords to match what your prospects are searching. This makes your copy consistently relevant, boosts your AdWords Quality Score, and increases conversions.                                              
+                      <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div></p>
+                  </div>
+                  </div>
+
+                   <div id="wrap_left">
+                   <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-03.svg" alt="flogo" width="60" height="60" />
+                  <div class="fLeft_cont">
+                    <h3>Publish to Any Domain</h3>
+                    <p id="sel_cont">
+                      Publish your Unbounce landing pages to any domain/URL — i.e. YourSite.com.                                             
+                      <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div></p>
+                  </div>
+                  </div>
+
+                                    <div id="wrap_left">
+                   <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-09-1.svg" alt="flogo" width="60" height="60" />
+                  <div class="fLeft_cont">
+                    <h3>Enable Custom Form Actions</h3>
+                    <p id="sel_cont">
+                      When visitors complete your form, you can redirect them to a new page, or show them a custom confirmation message.                                             
+                      <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div></p>
+                  </div>
+                  </div>
+              </div>
+
+
+
+ 
+
+             
+
+
+        </div><!--/right-->
+      </div>
+    </div><!--/row-->
+</div><!--/container-->
+
+    <div class="footer">
+      <div>
+        <div class="footer-icon"><img src="../image/unbounce-footer-icon.png"></div>
+        <ul>
+          Company
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Agency Partners</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Integrating with Unbounce</a></li>
+          <li><a href="#">Co-Marketing with Unbounce</a></li>
+          <li><a href="#">Inside Unbounce Blog</a></li>
+        </ul>
+        <ul>
+          Resources
+          <li><a href="#">Conversion Marketing Blog</a></li>
+          <li><a href="#">Marketing Resources</a></li>
+          <li><a href="#">Landing Page Examples</a></li>
+          <li><a href="#">Landing Page Articles</a></li>
+          <li><a href="#">PPC &#038; Landing Pages</a></li>
+          <li><a href="#">Unbounce For Startups</a></li>
+        </ul>
+        <ul>
+          Help
+          <li><a href="#">Academy</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+        <ul>
+          Get In Touch
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">1.855.435.5151</a></li>
+        </ul>
       </div>
     </div>
-  </div>
-</div>
+
+<script>
+/* activate sidebar */
+$('#sidebar').affix({
+  offset: {
+    top: 470
+  }
+});
+
+
+
+
+$(document).ready(function(){
+
+  /*scrollspy*/
+$('#ass').scrollspy({ target: '#sidebar', offset:10 });
+
+
+/*active*/
+    $('div#leftCol li').click(
+        function(e)
+        {
+            $('div#leftCol li').removeClass('active');
+            $(e.currentTarget).addClass('active');
+        }
+    );
+
+
+  /*smooth scroll*/
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top - 80
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+
+</script>
 
 </body>
 </html>
