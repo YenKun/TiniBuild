@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/feature-container.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/scrollarea.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <title>Mobile Responsive Landing Page Builder &amp; Website Overlay Creator</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -58,6 +59,707 @@
         <a class="btn-show" href="#">SHOW ME</a>
       </div>
     </div>
+
+  <style>
+  body {
+      position: relative;
+  }
+
+#bd {
+  position: relative;
+  height:auto;
+  overflow-y: hidden;
+
+}
+
+.affix-top, .affix{
+ position: static;
+}
+.affix-bottom {
+  position: absolute;
+}
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+    margin-top:30px;
+    width:228px;
+  }
+
+  #sidebar.affix {
+    position: fixed;
+    top:70px;
+    width:228px;
+  }
+}
+.col-md-9{
+  padding-top: 2%;
+  width:auto;
+  margin:2%;
+}
+a{
+  color:#444;
+  font-family: Century Gothic;
+  font-size:13px;
+}
+a:hover {
+    color:#f6921e !important;
+    background-color: transparent !important;
+}
+a:active{
+      color:#f6921e !important;
+    background-color: transparent !important;
+}
+.lst{
+  background-color: transparent !important;
+  width:auto;
+  float:left;
+}
+
+.lst.active a{
+    color:#f6921e !important;
+    background-color: transparent !important;
+}
+
+.lst.active div{
+    background-color: #f6921e !important;
+
+}
+
+#circ:hover{
+    background-color: #f6921e !important;
+}
+
+#circ{
+
+    float:left;
+    margin:6% 4.5% 4.5% 4.5%;
+    border: 1px solid grey;
+    padding-top: 3%;
+    background: transparent;
+    width: 13px;
+    height:13px;
+    border-radius: 50px;
+
+
+}
+#lihead{
+  color:#444;
+  font-weight: 500;
+  background: #ddecf2 !important;
+  line-height: 150%;
+  padding:3%;
+  width:80%;
+  margin-bottom: 5%
+}
+
+#sub{
+  margin-left: 15%
+}
+
+h2{
+  color:#014E72;
+  font-weight:normal;
+}
+#cont{
+  line-height: 150%;
+  font-size: 14px;
+  font-family: Century Gothic;
+  color:#666;
+  font-weight: lighter
+
+}
+#sel_cont{
+  line-height: 170%;
+  font-size: 13px;
+  font-family: Century Gothic;
+  color:#666;
+  font-weight: lighter
+
+}
+.cate-title{
+  border-top:3px solid #0098db;
+  width:40px;
+
+}
+.big-title{
+  border-top:3px solid #0098db;
+  margin-top: 5%;
+  padding-top:17%;
+  width:700px;
+
+}
+#cate-wrap{
+  margin: 5%;
+  padding-bottom: 5%
+}
+
+.fRight{
+  float:right;
+  right:2%;
+  margin-top: 5%;
+  height:354px !important;
+}
+
+.fLeft{
+  float:left;
+  width:250px;
+
+}
+.row{
+  width:1100px;
+}
+
+#leftCol{
+  padding:2%;
+  margin:0;
+}
+
+h3{
+  font-weight:550;
+  font-size:16px;
+  font-family: Century Gothic;
+  color: #444;
+}
+.fLeft_img{
+  float:left;
+  margin-top: 8%;
+}
+
+.fLeft_cont{
+  float:left;
+  margin-left:12px;
+  width:250px;
+}
+
+#select_icons{
+  width:100%;
+  height:auto;
+  margin:2% 0 15% 0;
+}
+
+#wrap_left{
+  margin:1%;
+  float:left;
+  padding:2%;
+}
+
+img{
+  margin-top: 2%;
+  margin-bottom:5%;
+}
+
+#cover{
+  width:100%;
+  height:400px;
+  background-image: url(https://unbounce-wpengine.netdna-ssl.com/photos/pattern_bg.jpg);
+  background-repeat: repeat;
+
+
+}
+
+.cover_content{
+  padding: 5%;
+  margin-left: 22%
+}
+
+.cover_text{
+  color:white;
+  font-size:44px;
+  font-family: Century Gothic;
+  font-weight:500;
+}
+
+.cover_p{
+  color:white;
+  font-size:20px;
+  font-weight:100;
+  font-family: Century Gothic;
+  line-height: 150%;
+
+}
+
+
+
+ </style>
+
+<div class="container">
+   <div class="row">
+      <!--left-->
+      <div class="col-md-3" id="leftCol">
+         <ul class="nav nav-stacked" id="sidebar">
+            <li class="lst" id="lihead">UNBOUNCE PLATFORM</li>
+            <li class="lst">
+               <div id="circ"></div>
+               <a href="#sec0">UNBOUNCE BUILDER</a>
+            </li>
+            <li class="lst" id="sub">
+               <div id="circ"></div>
+               <a href="#sec1">LANDING PAGES</a>
+            </li>
+            <li class="lst" id="sub">
+               <div id="circ"></div>
+               <a href="#sec2">CONVERTABLES</a>
+            </li>
+            <li class="lst">
+               <div id="circ"></div>
+               <a href="#sec3">TEMPLATES</a>
+            </li>
+            <li class="lst">
+               <div id="circ"></div>
+               <a href="#sec4">CONVERSION TOOLS</a>
+            </li>
+            <li class="lst">
+               <div id="circ"></div>
+               <a href="#sec5">AGENCY & CLIENT TOOLS</a>
+            </li>
+         </ul>
+      </div>
+      <!--/left-->
+      <!--right-->
+      <div id="bd" data-spy="scroll" data-target="sidebar">
+         <div class="col-md-9">
+
+
+            <div id="cate-wrap">
+               <h2 id="sec0">Unbounce Builder</h2>
+               <p id="cont">The Unbounce Builder empowers every member of your team to rapidly build custom landing pages and high-converting overlays (Convertables) for any campaign — without developers, coding skills or tech bottlenecks.</p>
+            </div>
+
+            <div id="cate-wrap">
+               <div class="fLeft">
+                  <h2 id="sec1" class="cate-title">Landing Pages</h2>
+                  <p id="cont">Unbounce is the world’s most sophisticated landing page builder. What&#8217;s to love about it? Well, marketers love the drag and drop builder and airtight integrations. Designers love the ability to match any creative vision or brand guideline. And developers love how nobody asks them to do anything.<br />
+                     <a href="/pricing/" class="btn orange-btn orange-shadow-btn orange-btn-banner" target="_self" style="padding: 7px 15px; font-size: 13px; display: inline-block; margin-top: 13px; -webkit-box-shadow: 0 2px #db821a; box-shadow: 0 2px #db821a; margin-bottom: 3px; border-radius: 2px;">Try Unbounce Free</a>
+                  </p>
+               </div>
+               <div class="fRight"><img src="https://unbounce.com/photos/Landing-Page-Builder-1.jpeg" alt="Landing Pages" width="420" height="301" data-src="/Landing-Page-Builder-1.jpeg" />
+               </div>
+            </div>
+
+
+         <div id="select_icons">
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-01.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Drag & Drop Any Element</h3>
+                  <p id="sel_cont">
+                     Add, remove or customize your page elements with just a few clicks. Anyone can use it… no coding skills required!
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-13.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Match Your Branding</h3>
+                  <p id="sel_cont">
+                     Make any template your own. Every element can be completely customized, helping you stay on-brand while still designing for conversion.
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-05.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Works With WordPress</h3>
+                  <p id="sel_cont">
+                     Publish landing pages to any WordPress site with 1 click; no DNS record or CNAME setup required. Just install the plugin and start publishing.
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-22.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Dynamic Text Replacement</h3>
+                  <p id="sel_cont">
+                     DTR swaps out select keywords to match what your prospects are searching. This makes your copy consistently relevant, boosts your AdWords Quality Score, and increases conversions.
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-03.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Publish to Any Domain</h3>
+                  <p id="sel_cont">
+                     Publish your Unbounce landing pages to any domain/URL — i.e. YourSite.com.
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-09-1.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Enable Custom Form Actions</h3>
+                  <p id="sel_cont">
+                     When visitors complete your form, you can redirect them to a new page, or show them a custom confirmation message.
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+         </div>
+         <!--select icon-->
+
+            <div id="cate-wrap">
+               <div class="fLeft">
+                  <h2 id="sec2" class="cate-title">Convertables</h2>
+                  <p id="cont">Unbounce is the world’s most sophisticated landing page builder. What&#8217;s to love about it? Well, marketers love the drag and drop builder and airtight integrations. Designers love the ability to match any creative vision or brand guideline. And developers love how nobody asks them to do anything.<br />
+                     <a href="/pricing/" class="btn orange-btn orange-shadow-btn orange-btn-banner" target="_self" style="padding: 7px 15px; font-size: 13px; display: inline-block; margin-top: 13px; -webkit-box-shadow: 0 2px #db821a; box-shadow: 0 2px #db821a; margin-bottom: 3px; border-radius: 2px;">Try Unbounce Free</a>
+                  </p>
+               </div>
+               <div class="fRight"><img src="https://unbounce.com/photos/convertableimage_features.jpg" alt="Landing Pages" width="420" height="301" data-src="/Landing-Page-Builder-1.jpeg" />
+               </div>
+            </div>
+
+
+         <div id="select_icons">
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-01.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Drag & Drop Any Element</h3>
+                  <p id="sel_cont">
+                     Add, remove or customize your page elements with just a few clicks. Anyone can use it… no coding skills required!
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-13.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Match Your Branding</h3>
+                  <p id="sel_cont">
+                     Make any template your own. Every element can be completely customized, helping you stay on-brand while still designing for conversion.
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-05.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Works With WordPress</h3>
+                  <p id="sel_cont">
+                     Publish landing pages to any WordPress site with 1 click; no DNS record or CNAME setup required. Just install the plugin and start publishing.
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-22.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Dynamic Text Replacement</h3>
+                  <p id="sel_cont">
+                     DTR swaps out select keywords to match what your prospects are searching. This makes your copy consistently relevant, boosts your AdWords Quality Score, and increases conversions.
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-03.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Publish to Any Domain</h3>
+                  <p id="sel_cont">
+                     Publish your Unbounce landing pages to any domain/URL — i.e. YourSite.com.
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-09-1.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Enable Custom Form Actions</h3>
+                  <p id="sel_cont">
+                     When visitors complete your form, you can redirect them to a new page, or show them a custom confirmation message.
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+         </div>
+         <!--select icon-->
+
+
+            <div id="cate-wrap">
+               <div class="fLeft">
+                  <h2 id="sec3" class="big-title">Templates</h2>
+                  <p id="cont">Unbounce is the world’s most sophisticated landing page builder. What&#8217;s to love about it? Well, marketers love the drag and drop builder and airtight integrations. Designers love the ability to match any creative vision or brand guideline. And developers love how nobody asks them to do anything.<br />
+                     <a href="/pricing/" class="btn orange-btn orange-shadow-btn orange-btn-banner" target="_self" style="padding: 7px 15px; font-size: 13px; display: inline-block; margin-top: 13px; -webkit-box-shadow: 0 2px #db821a; box-shadow: 0 2px #db821a; margin-bottom: 3px; border-radius: 2px;">Try Unbounce Free</a>
+                  </p>
+               </div>
+               <div class="fRight"><img src="https://unbounce.com/photos/landing-page-templates-3.jpg" alt="Landing Pages" width="420" height="301" data-src="/Landing-Page-Builder-1.jpeg" />
+               </div>
+            </div>
+
+
+         <div id="select_icons">
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-01.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Drag & Drop Any Element</h3>
+                  <p id="sel_cont">
+                     Add, remove or customize your page elements with just a few clicks. Anyone can use it… no coding skills required!
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-13.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Match Your Branding</h3>
+                  <p id="sel_cont">
+                     Make any template your own. Every element can be completely customized, helping you stay on-brand while still designing for conversion.
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-05.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Works With WordPress</h3>
+                  <p id="sel_cont">
+                     Publish landing pages to any WordPress site with 1 click; no DNS record or CNAME setup required. Just install the plugin and start publishing.
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-22.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Dynamic Text Replacement</h3>
+                  <p id="sel_cont">
+                     DTR swaps out select keywords to match what your prospects are searching. This makes your copy consistently relevant, boosts your AdWords Quality Score, and increases conversions.
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-03.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Publish to Any Domain</h3>
+                  <p id="sel_cont">
+                     Publish your Unbounce landing pages to any domain/URL — i.e. YourSite.com.
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-09-1.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Enable Custom Form Actions</h3>
+                  <p id="sel_cont">
+                     When visitors complete your form, you can redirect them to a new page, or show them a custom confirmation message.
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+         </div>
+         <!--select icon-->
+
+            <div id="cate-wrap">
+               <div class="fLeft">
+                  <h2 id="sec4" class="big-title">Conversion Tools</h2>
+                  <p id="cont">Unbounce is the world’s most sophisticated landing page builder. What&#8217;s to love about it? Well, marketers love the drag and drop builder and airtight integrations. Designers love the ability to match any creative vision or brand guideline. And developers love how nobody asks them to do anything.<br />
+                     <a href="/pricing/" class="btn orange-btn orange-shadow-btn orange-btn-banner" target="_self" style="padding: 7px 15px; font-size: 13px; display: inline-block; margin-top: 13px; -webkit-box-shadow: 0 2px #db821a; box-shadow: 0 2px #db821a; margin-bottom: 3px; border-radius: 2px;">Try Unbounce Free</a>
+                  </p>
+               </div>
+               <div class="fRight"><img src="https://unbounce-wpengine.netdna-ssl.com/photos/conversion-tools.jpg" alt="Landing Pages" width="420" height="301" data-src="/Landing-Page-Builder-1.jpeg" />
+               </div>
+            </div>
+
+
+         <div id="select_icons">
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-01.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Drag & Drop Any Element</h3>
+                  <p id="sel_cont">
+                     Add, remove or customize your page elements with just a few clicks. Anyone can use it… no coding skills required!
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-13.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Match Your Branding</h3>
+                  <p id="sel_cont">
+                     Make any template your own. Every element can be completely customized, helping you stay on-brand while still designing for conversion.
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-05.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Works With WordPress</h3>
+                  <p id="sel_cont">
+                     Publish landing pages to any WordPress site with 1 click; no DNS record or CNAME setup required. Just install the plugin and start publishing.
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-22.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Dynamic Text Replacement</h3>
+                  <p id="sel_cont">
+                     DTR swaps out select keywords to match what your prospects are searching. This makes your copy consistently relevant, boosts your AdWords Quality Score, and increases conversions.
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-03.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Publish to Any Domain</h3>
+                  <p id="sel_cont">
+                     Publish your Unbounce landing pages to any domain/URL — i.e. YourSite.com.
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-09-1.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Enable Custom Form Actions</h3>
+                  <p id="sel_cont">
+                     When visitors complete your form, you can redirect them to a new page, or show them a custom confirmation message.
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+         </div>
+         <!--select icon-->
+
+
+
+            <div id="cate-wrap">
+               <div class="fLeft">
+                  <h2  id="sec5" class="big-title">Agency & Client<br/> Tools</h2>
+                  <p id="cont">Unbounce is the world’s most sophisticated landing page builder. What&#8217;s to love about it? Well, marketers love the drag and drop builder and airtight integrations. Designers love the ability to match any creative vision or brand guideline.<br />
+                     <a href="/pricing/" class="btn orange-btn orange-shadow-btn orange-btn-banner" target="_self" style="padding: 7px 15px; font-size: 13px; display: inline-block; margin-top: 13px; -webkit-box-shadow: 0 2px #db821a; box-shadow: 0 2px #db821a; margin-bottom: 3px; border-radius: 2px;">Try Unbounce Free</a>
+                  </p>
+               </div>
+               <div class="fRight"><img src="https://unbounce-wpengine.netdna-ssl.com/photos/agencyclientools@2xx.jpg" alt="Landing Pages" width="420" height="301" data-src="/Landing-Page-Builder-1.jpeg" />
+               </div>
+            </div>
+
+
+         <div id="select_icons">
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-01.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Drag & Drop Any Element</h3>
+                  <p id="sel_cont">
+                     Add, remove or customize your page elements with just a few clicks. Anyone can use it… no coding skills required!
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-13.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Match Your Branding</h3>
+                  <p id="sel_cont">
+                     Make any template your own. Every element can be completely customized, helping you stay on-brand while still designing for conversion.
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-05.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Works With WordPress</h3>
+                  <p id="sel_cont">
+                     Publish landing pages to any WordPress site with 1 click; no DNS record or CNAME setup required. Just install the plugin and start publishing.
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-22.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Dynamic Text Replacement</h3>
+                  <p id="sel_cont">
+                     DTR swaps out select keywords to match what your prospects are searching. This makes your copy consistently relevant, boosts your AdWords Quality Score, and increases conversions.
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-03.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Publish to Any Domain</h3>
+                  <p id="sel_cont">
+                     Publish your Unbounce landing pages to any domain/URL — i.e. YourSite.com.
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+            <div id="wrap_left">
+               <img class="fLeft_img" src="https://unbounce-wpengine.netdna-ssl.com/photos/icons-09-1.svg" alt="flogo" width="60" height="60" />
+               <div class="fLeft_cont">
+                  <h3>Enable Custom Form Actions</h3>
+                  <p id="sel_cont">
+                     When visitors complete your form, you can redirect them to a new page, or show them a custom confirmation message.
+                  <div><a class="loadmore" href="https://unbounce.com/features/drag-drop-any-element/">Learn More</a></div>
+                  </p>
+               </div>
+            </div>
+
+         </div>
+         <!--select icon-->
+
+
+         </div>
+         <!--col-9-->
+      </div>
+      <!--/right-->
+   </div>
+   <!--/row-->
+</div>
+<!--/container-->
+
+<div id="cover">
+
+              <div class="cover_content">
+                <h2 class="cover_text">Ready to Drive More Conversions?</h2>
+                <div><p class="cover_p">Join 14,000 brands building landing pages and overlays without developers.</p></div>
+            <div class="orange-button"><a href="/pricing/" style="padding:1%; margin-top: 2%; margin-left: 20%" class="btn orange-btn orange-shadow-btn" target="_self">PICK A PLAN & START YOUR 30-DAY TRIAL</a></div>
+              <div><p style="margin-left: 15%; margin-top: 2%" class="cover_p">Free 30-day trial on all plans. No obligation.</p></div>
+            </div>
+</div>
+
+
     <div class="footer">
       <div>
         <div class="footer-icon"><img src="../image/unbounce-footer-icon.png"></div>
@@ -99,5 +801,61 @@
         </ul>
       </div>
     </div>
+
+
+
+    <script>
+
+$(document).ready(function(){
+
+  /* activate sidebar */
+$('#sidebar').affix({
+  offset: {
+    top: 470,
+    bottom: 900
+  }
+});
+
+  /*scrollspy*/
+$('#bd').scrollspy({target: "#sidebar"})
+
+
+/*active*/
+    $('div#leftCol li').click(
+        function(e)
+        {
+            $('div#leftCol li').removeClass('active');
+            $(e.currentTarget).addClass('active');
+        }
+    );
+
+
+  /*smooth scroll*/
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top - 80
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+
+</script>
   </body>
 </html>
